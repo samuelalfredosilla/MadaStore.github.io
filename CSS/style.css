@@ -1,0 +1,297 @@
+:root{
+    --dark-blue : #0f0d27;
+    --blue : #2e2d2d;
+    --gren : #FF8C00;
+    --white: #fff;
+}
+
+*{
+    margin : 0;
+    padding : 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: "tahoma";
+}
+
+body{
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+header{
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 15pt;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: var(--blue);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+}
+
+.title{
+    height:1%;
+    border-bottom: 1px solid var(--white);
+}
+
+.title-p{
+    color : var(--gren);
+    padding-bottom: 1%;
+}
+
+header a .title {
+    width: 7%;
+}
+
+.input-search {
+    width: 50%;
+    border:none;
+    border-radius: 0 0 0 20px;
+    padding: 8px;
+}
+
+.input-submit {
+    margin-left:-4px;
+    border:none;
+    border-radius: 0 20px 0 0;
+    padding: 8px;
+    background-color: var(--gren);
+    width: 4%;
+    font-weight: bold;
+}
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.slider
+{
+    margin-top: 10%;
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 59%;
+}
+
+.slides
+{
+    display: flex;
+    width: 50rem;
+    overflow: hidden;
+}
+
+.slides img 
+{
+    border-radius: 30px;
+}
+
+.slide
+{
+    width: 150rem;
+    transition: .5s;
+}
+
+.choose_1:checked ~ .slides > .s1
+{
+    margin-left: -0rem;
+}
+
+.choose_2:checked ~ .slides > .s1
+{
+    margin-left: -50rem;
+}
+
+
+.overlay 
+{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay:target 
+{
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup 
+{
+    margin: 70px auto;
+    padding: 20px;
+    background: var(--dark-blue);
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+  
+.popup h2 {
+    margin-top: 0;
+    color: var(--white);
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.popup .close:hover 
+{
+    color: #06D85F;
+}
+
+.content 
+{
+    max-height: 30%;
+    width: 50%;
+}
+
+.title-p{
+    margin-left: 65px;
+    margin-top: 5%;
+}
+
+.populer {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.populer img{
+    border-radius: 10px;
+}
+
+.harga {
+    color: var(--gren);
+}
+
+.link a {
+    color: var(--white);
+}
+
+.link a:hover {
+    color:var(--gren);
+}
+
+.pesan img{
+    width: 30px;
+}
+
+.pesan{
+    background-color: var(--gren);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.pesan:hover{
+    background-color: var(--white);
+}
+
+.title-s{
+    margin-left: 65px;
+    margin-top: 3%;
+    color: var(--gren);
+}
+
+.STREAMING-APPS img{
+    border-radius: 10px;
+}
+
+.STREAMING-APPS {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.easport{
+    width: 86%;
+}
+
+.coc{
+    width: 94%;
+}
+
+.honkai{
+    width: 94%;
+}
+
+.tot{
+    width:94%;
+}
